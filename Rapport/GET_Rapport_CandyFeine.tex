@@ -1,14 +1,27 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage[parfill]{parskip}
+\usepackage{float}
+
+\usepackage{ifxetex,ifluatex}
+
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
 
 \title{GET - Rapport- CandyFeine}
 \author{Joel Schar, Yann Lederrey, Steve Henriquet, Anthoine Zaf }
 \date{December 2018}
 
-\usepackage{natbib}
-\usepackage{graphicx}
 
-\usepackage[parfill]{parskip}
 
 \begin{document}
 
@@ -90,19 +103,25 @@ Le packaging est sous-forme de sachet avec une étiquette décrivant les ingréd
 \begin{figure}[H]
 \centering
    \caption{\label{étiquette} étiquette des CandyFeine gout café}
-   \includegraphics[scale=1]{../img/designEtiquettes_Cafe.png}
-
-   \caption{\label{étiquette} étiquette des CandyFeine gout citron}
-   \includegraphics[scale=1]{../img/designEtiquettes_Citron.png}
+   \includegraphics[scale=0.8]{../img/designEtiquettes_Cafe.png}
 \end{figure}
+
+\begin{figure}[H]
+\centering
+   \caption{\label{étiquette} étiquette des CandyFeine gout citron}
+   \includegraphics[scale=0.8]{../img/designEtiquettes_Citron.png}
+\end{figure}
+
 \begin{figure}[H]
 \centering
    \caption{\label{étiquette} étiquette des CandyFeine gout framboise}
-   \includegraphics[scale=1]{../img/designEtiquettes_Framboise.png}
+   \includegraphics[scale=0.8]{../img/designEtiquettes_Framboise.png}
+\end{figure}
 
+\begin{figure}[H]
+\centering
    \caption{\label{étiquette} étiquette des CandyFeine gout pomme-citron}
-   \includegraphics[scale=1]{../img/designEtiquettes_pommeCitron.png}
-
+   \includegraphics[scale=0.8]{../img/designEtiquettes_pommeCitron.png}
 \end{figure}
 
 
@@ -114,17 +133,27 @@ A l'heure actuelle nous proposants uniquement le conseil client comme préstatio
 \section{Processus}
 \includegraphics[scale=0.4]{../processus_de_commande.png} 
 
+Le processus décrit ci dessus illustre le flux que nous envisageons pour la production de bonbons suite à une commande. Le délais pour ce processus dépend comme décrit du stocke de bonbons déjà préparés et de la quantité d'ingrédients qu'il faudra recommander.\\
+On peut envisager les délais d'attentes suivant:\\
+\begin{itemize}
+\item délais de livraison des ingrédients : ~ 3 jours
+\item temps de repos :  5 jours
+\end{itemize}
+On peut donc envisager qu'avec le temps de préparation des bons et l'envoie le délais maximum pour une commande sera de 2 semaines.
+
+Ce processus est orienté pour la commande depuis notre site internet. En effet nous ne prenons ici pas en compte de processus qui pourrait arriver lors de vente ponctuelle sur un marché ou dans un foire. Ces événements étant exceptionnels et non prévisibles nous ne les avons pas inclus et sommes resté sur un processus de base simple.
+
 \section{Prix}
 Le prix de la matière première pour une quantité de 1600 portions de bonbons nous revient à 560.- . Sur cette base on peut conclure que le prix de la matière première pour une portion revient à 0.35 CHF.\\
 A cela viennent s'ajouter le prix de l’emballage de 0.10 CHF.\\
 
-En ajoutant à cela les frais fixe pour la production ainsi que les salaires des employés et en faisant une corrélation des ces couts avec les capacité de production, on trouve que nous devons vendre notre produit à un prix raisonnable de 4.50 CHF.
+En ajoutant à cela les frais fixe pour la production ainsi que les salaires des employés et en faisant une corrélation des ces coûts avec les capacité de production, on trouve que nous devons vendre notre produit à un prix raisonnable de 4.50 CHF.
 
 Ingrédients ( matière première ) : 0.35 CHF \\
 Embalage : 0.10 CHF \\
 Prix final du produit :  4.50 CHF\\
 
-Cette différence de prix nous permet de couvrir les frais de production, d'amortir l'investissement et de dégager un salaire correct pour les employés.
+Cette différence de prix nous permet de couvrir les frais de production, d'amortir l'investissement et de dégager un salaire correct pour les employés. Selon la courbes prévisionnelle sur 5 ans on voit que cette marges reste minime au début, mais permet ensuite de dégager un joli bénéfice qui devrait permettre de réinvestir et d'améliorer la structure pour faire tourner l'entreprise.
 
 \section{Objectifs commerciaux}
 \subsection{Stratégie d'attirance des clients}
@@ -151,6 +180,11 @@ L'utilisation d'une page Facebook et d'un compte Twitter est une option gratuite
 \section{Budget prévisionnel sur 3-5 ans}
 
 \section{Conclusion}
+La mise sur le marché de notre produit nous semble prometteur. Nous avons des gens intéressés par le produit ce qui annonce des clients potentiels qui pourraient potentiellement acheter le produit voir devenir des clients régulier. Les bilans provisionnels que nous avons fait annoncent que nous devrions arriver à dégager un bénéfice suffisant dans les premiers mois pour faire démarrer l'entreprise et par la suite avoir des ressources suffisante pour réinvestir dans de nouvelle ressource de production. Il serait alors possible d'acheter des machines plus performantes et produire plus en moins de temps ou d'engager du personnels supplémentaire.
+
+En ce qui concerne le cheminement du projet, nous avons remarqué que de prévoir et d'établir un cahier des charges réaliste est relativement difficile. Du fait que nous ne savons pas ce qui va marché et ce qui pourrait nous permettre de booster notre entreprise tout en ayant une gestion des coûts optimum et ainsi dégager le bénéfice maximum qui permettra de faire fructifier l'affaire.
+
+Comme nous l'a dit M. Bruyndonckx, il n'existe pas de recette miracle et le seul moyen de réussir à lancer son business, c'est de faire au mieux et de se lancer. Si le début fonctionne suffisamment bien il sera ensuite possible de s'entourer des personnes qui permettrons de monter une structure solide et de pérenniser notre activité.
 
 \bibliographystyle{plain}
 \bibliography{références}
